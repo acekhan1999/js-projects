@@ -1,2 +1,2 @@
 # js-projects
-first webpage js project
+all of my js practice projects
