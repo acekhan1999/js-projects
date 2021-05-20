@@ -36,6 +36,10 @@ function init() {
     completed_todos.innerHTML = ""
     let counter = -1; 
 
+    if (todos.length === 0) {
+        todo_list.innerHTML = "<b class='empty_list'>Empty List.</b>";
+    }
+
     todos.forEach((todo) => {
         counter++;
 
