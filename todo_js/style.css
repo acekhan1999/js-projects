@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    padding: 5%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.submit_item {
+    margin-left: -5px;
+    background-color: orange;
+    color: white;
+    border: none;
+    width: 40px;
+    padding: 5px 0;
+}
+
+.item_name {
+    width: 80%;
+    border: none;
+    border-bottom: 2.5px solid black;
+    outline: none;
+    padding: 10px;
+}
+
+.todo_form {
+    text-align: center;
+}
+
+.todos_list {
+    margin: 5% 0;
+}
+
+.todo {
+    border-bottom: 1px solid grey;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo_desc {
+    width: 90%;
+}
+
+.todo_desc p {
+    margin: 0;
+}
+
+.todo_btns {
+    display: flex;
+}
+
+.todo_btns button {
+    width: 40px;
+    border: none;
+    margin: 5px;
+}
+
+.todo_btns .done {
+    background-color: green;
+    color: white;
+}
+
+.todo_btns .remove {
+    background-color: red;
+    color: white;
+}
+
+.completed_todo_list {
+    background-color: green;
+    color: white;
+    padding: 2.5%;
+    margin: 5% 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .todo {
+        flex-direction: column;
+    }
+
+    .todo_btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+}

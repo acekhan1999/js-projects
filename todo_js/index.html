@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List Using JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo_form">
+            <h1>JavaScript - Todo App</h1>
+            <input type="text" name="item_name" id="item_name" class="item_name" placeholder="Enter item here..">
+            <button id="submit_item" class="submit_item">
+                <i class="fa fa-check"></i>
+            </button>
+        </div>
+        <div class="todos_list">
+            <h2>Your Todos</h2>
+            <div class='todo_list' id='todo_list'>
+
+                <!-- <div class='todo'>
+                <div class='todo_desc'>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod dolorem fuga fugit hic ex. Consequuntur exercitationem, dolorem inventore </p>
+                </div>
+                <div class='todo_btns'>
+                    <button class='done'>
+                        <i class='fa fa-check'></i>
+                    </button>
+                    <button class='remove'>
+                        <i class='fa fa-remove'></i>
+                    </button>
+                </div>
+            </div> -->
+            </div>
+            <div class="completed_todo_list">
+                <h2>Completed Todos</h2>
+                <div class="completed_todos" id="completed_todos">
+                    <!-- <div class='todo'>
+                        <div class='todo_desc'>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod dolorem fuga fugit hic ex. Consequuntur exercitationem, dolorem inventore </p>
+                        </div>
+                        <div class='todo_btns'>
+                            <button class='remove'>
+                                <i class='fa fa-remove'></i>
+                            </button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
