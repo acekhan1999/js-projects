@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    padding: 0 2%;
+}
+
+.est-title {
+    text-align: center;
+}
+
+.car {
+    /* background-color: greenyellow; */
+    padding: 5% 0;
+    position: absolute;
+    margin-top: 28vh;
+    margin-left: 10px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* transition-duration: 2s; */
+}
+
+.car.move {
+    /* justify-content: right; */
+    position: absolute;
+    animation: forwards;
+    animation-name: run;
+    animation-duration: 10s;
+    /* text-align: right; */
+}
+
+.car img {
+    width: 250px;
+}
+
+.wheels {
+    display: flex;
+    justify-content: space-between;
+    width: 198px;
+    margin-left: 15px;
+    margin-top: -47px;
+}
+
+.wheels img {
+    width: 48px;
+}
+.wheels.move img {
+    animation: rotation 0.25s infinite linear;
+}
+
+.track {
+    height: 75vh;
+    background: url("images/background.jpg") no-repeat;
+    background-position: 0 100%;
+    background-size: 200% 250%;
+}
+
+.track.move {
+    /* background-size: 100%; */
+    /* height: 100%; */
+    animation: bgmve 2s infinite linear;
+}
+
+.arrival-time {
+    display: flex;
+    justify-content: center;
+}
+
+#arrival-time span {
+    font-size: 45px;
+}
+
+#arrival-time {
+    
+    background-color: white;
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.form {
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.form form input, .form form button {
+    border: 2.5px solid rgb(184, 183, 183);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+
+.form form .error {
+    border: 2.5px solid rgb(92, 1, 1);
+}
+
+.form form .success {
+    border: 2.5px solid rgb(1, 92, 13);
+}
+
+@keyframes run {
+    0% {
+        left: 5%;
+    }
+    50% {
+        left: 40%;
+    }
+    100% {
+        left: 40%;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes bgmve {
+    to {
+        background-position: 100% 100%;
+    } /* make it short */
+}
+
+/* .est-title h1{
+    font-size: 21px;
+} */
